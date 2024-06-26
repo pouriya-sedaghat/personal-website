@@ -31,7 +31,7 @@ export default function Home() {
           <div>
             <h2 className="h5">Hello &#128075;</h2>
             <p>
-              I&apos;m Pouriya Sedaghat, A Frontend Developer <br /> I have been
+              I&apos;m Pouriya Sedaghat, A Frontend Developer. <br /> I have been
               working in this field for almost two years. <br /> I am very
               interested in developing programs that challenge me and have a
               complex UI. <br /> I am very interested in gaining new experiences

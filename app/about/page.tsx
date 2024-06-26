@@ -15,7 +15,7 @@ function About() {
     <Row>
       <CustomCol flex={false}>
         <h2 className="h5">Profile</h2>
-        <p style={{ textAlign: "justify" }}>
+        <p>
           I am a Frontend developer with experience and skill in web application
           development.
           <br /> With high ability in HTML, CSS, Bootstrap, Tailwind CSS, SASS,
