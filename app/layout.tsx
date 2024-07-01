@@ -12,7 +12,7 @@ import { ThemeContextProvider } from "@/context/Theme";
 import { basePath } from "@/next.config.mjs";
 
 const font = localFont({
-  src: "../public/fonts/PlaywriteITModerna-Regular.woff2",
+  src: "../public/fonts/Roboto-Regular.woff2",
 });
 
 export const metadata: Metadata = {
