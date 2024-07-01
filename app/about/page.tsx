@@ -19,8 +19,8 @@ function About() {
           I am a Frontend developer with experience and skill in web application
           development.
           <br /> With high ability in HTML, CSS, Bootstrap, Tailwind CSS, SASS,
-          JavaScript, jQuery, AJAX, TypeScript, Reactjs, Nextjs, State
-          Manegment, Jest, MongoDB Database and ..., I can create dynamic and
+          JavaScript, jQuery, AJAX, TypeScript, React.js, Next.js, State
+          Manegment, MongoDB Database and ..., I can create dynamic and
           attractive user interface.
           <br /> In addition, by using popular JavaScript libraries and
           frameworks such as Reactjs and Nextjs and JavaScript packages, I have
