@@ -1,6 +1,6 @@
-import { Theme } from "@/interface/Theme";
+import { ScreenType } from "@/interface/ScreenType";
 
-export const themes: { light: Theme; dark: Theme } | any = {
+export const themes: ScreenType = {
   light: {
     color: "text-dark",
     bgColor: "bg-light",

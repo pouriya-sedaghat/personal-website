@@ -2,15 +2,9 @@
 
 import { createContext, useState } from "react";
 
-type State = string;
-type SetState = (state: string) => void;
+import { ThemeContext as TC } from "@/interface/ThemeContext";
 
-interface ThemeContext {
-  state: State;
-  setState: SetState;
-}
-
-export const ThemeContext = createContext({} as ThemeContext);
+export const ThemeContext = createContext({} as TC);
 
 export function ThemeContextProvider({
   children,
@@ -18,8 +12,13 @@ export function ThemeContextProvider({
   children: React.ReactNode;
 }) {
   const [state, setState] = useState<string>("light");
+
+  function toggleThemeHandler() {
+    state === "light" ? setState("dark") : setState("light");
+  }
+
   return (
-    <ThemeContext.Provider value={{ state, setState }}>
+    <ThemeContext.Provider value={{ state, toggleThemeHandler }}>
       {children}
     </ThemeContext.Provider>
   );

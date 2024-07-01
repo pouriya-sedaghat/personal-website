@@ -2,13 +2,21 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Link from "next/link";
 
+import { ThemeContext } from "@/interface/ThemeContext";
+
 import ChangeThemeHandler from "./ChangeThemeHandler";
 
 import { Theme } from "@/interface/Theme";
 
-function Header({ theme }: { theme: Theme }) {
+function Header({
+  theme: { bgMenue, colorMenu, BTNColor },
+  values,
+}: {
+  theme: Theme;
+  values: ThemeContext;
+}) {
   return (
-    <Container fluid className={theme.bgMenue + " " + theme.colorMenu}>
+    <Container fluid className={`${bgMenue} ${colorMenu}`}>
       <Row>
         <Col
           xs={12}
@@ -43,7 +51,7 @@ function Header({ theme }: { theme: Theme }) {
               </Link>
             </li>
           </ul>
-          <ChangeThemeHandler theme={theme} />
+          <ChangeThemeHandler btnColor={BTNColor} values={values} />
         </Col>
       </Row>
     </Container>

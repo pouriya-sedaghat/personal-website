@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 function About() {
   return (
     <Row>
-      <CustomCol flex={false}>
+      <CustomCol>
         <h2 className="h5">Profile</h2>
         <p>
           I am a Frontend developer with experience and skill in web application

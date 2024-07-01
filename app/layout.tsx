@@ -7,8 +7,11 @@ import App from "@/layout/App";
 
 import { ThemeContextProvider } from "@/context/Theme";
 
+import { basePath } from "@/next.config.mjs";
+
 export const metadata: Metadata = {
   description: "Pouriya Sedaghat Personal Website.",
+  icons: { icon: `${basePath}/favicon.ico` },
 };
 
 export default function RootLayout({

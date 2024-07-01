@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 function Contact() {
   return (
     <Row>
-      <CustomCol flex={false}>
+      <CustomCol>
         <h2 className="h5">Contact</h2>
         <ul className="list-unstyled">
           <li>

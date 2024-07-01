@@ -7,21 +7,25 @@ import { ThemeContext } from "@/context/Theme";
 
 import { themes } from "@/themes/screen";
 
+import { ScreenType } from "@/interface/ScreenType";
+
 function CustomCol({
   children,
-  flex,
+  customClass,
 }: {
   children: React.ReactNode;
-  flex: boolean;
+  customClass?: string;
 }) {
   const { state } = useContext(ThemeContext);
+
+  const { borderColor } = themes[state as keyof ScreenType];
 
   return (
     <Col
       xs={10}
-      className={`${flex ? "d-lg-flex justify-content-between " : ""} border ${
-        themes[state].borderColor
-      } offset-1 border-2 rounded-5 my-4 p-5`}
+      className={`${
+        customClass || ""
+      } border ${borderColor} offset-1 border-2 rounded-5 my-4 p-5`}
     >
       {children}
     </Col>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,13 +11,12 @@ import { basePath } from "@/next.config.mjs";
 
 export const metadata: Metadata = {
   title: "Home",
-  icons: { icon: `${basePath}/favicon.ico` },
 };
 
 export default function Home() {
   return (
     <Row>
-      <CustomCol flex>
+      <CustomCol customClass="d-lg-flex justify-content-between">
         <div className="col-lg-3 col-12 overflow-hidden rounded-5 mb-lg-0 mb-3">
           <Image
             src={`${basePath}/images/me.png`}
@@ -31,8 +30,8 @@ export default function Home() {
           <div>
             <h2 className="h5">Hello &#128075;</h2>
             <p>
-              I&apos;m Pouriya Sedaghat, A Frontend Developer. <br /> I have been
-              working in this field for almost two years. <br /> I am very
+              I&apos;m Pouriya Sedaghat, A Frontend Developer. <br /> I have
+              been working in this field for almost two years. <br /> I am very
               interested in developing programs that challenge me and have a
               complex UI. <br /> I am very interested in gaining new experiences
               and working with different teams.

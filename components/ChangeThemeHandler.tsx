@@ -1,26 +1,19 @@
-"use client";
+import { ThemeContext } from "@/interface/ThemeContext";
 
-import { useContext } from "react";
-import { ThemeContext } from "@/context/Theme";
-
-import { Theme } from "@/interface/Theme";
-
-function ChangeThemeHandler({ theme }: { theme: Theme }) {
-  const { setState } = useContext(ThemeContext);
-
+function ChangeThemeHandler({
+  btnColor,
+  values: { state, toggleThemeHandler },
+}: {
+  btnColor: string;
+  values: ThemeContext;
+}) {
   return (
     <div className="btn-group">
       <button
-        className={`btn ${theme.BTNColor}`}
-        onClick={() => setState("dark")}
+        className={`btn ${btnColor} text-capitalize`}
+        onClick={() => toggleThemeHandler()}
       >
-        Dark
-      </button>
-      <button
-        className={`btn ${theme.BTNColor}`}
-        onClick={() => setState("light")}
-      >
-        Light
+        {state} mode
       </button>
     </div>
   );
