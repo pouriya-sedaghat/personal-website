@@ -5,6 +5,9 @@ import { Row } from "react-bootstrap";
 import Link from "next/link";
 
 import CustomCol from "@/components/CustomCol";
+import ShieldsIO from "@/components/ShieldsIO";
+
+import logos from "@/data/logos.json";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -30,68 +33,11 @@ function Contact() {
         </ul>
         <div>
           <h2 className="h5">Social Media</h2>
-          <Link
-            href="https://linkedin.com/in/pouriya-sedaghat"
-            target="_blank"
-            className="me-1"
-          >
-            <img
-              src="https://shields.io/badge/LinkedIn-Let's Go-linkedin.svg?style=flat&logo=linkedin"
-              alt="LinkedIn"
-            />
-          </Link>
-          <Link
-            href="https://github.com/pouriya-sedaghat"
-            target="_blank"
-            className="me-1"
-          >
-            <img
-              src="https://shields.io/badge/Github-Let's Go-github.svg?style=flat&logo=github"
-              alt="Github"
-            />
-          </Link>
-          <Link
-            href="https://https://stackoverflow.com/users/21948275/pouriya-sedaghat"
-            target="_blank"
-            className="me-1"
-          >
-            <img
-              src="https://shields.io/badge/StackOverflow-Let's Go-stackoverflow.svg?style=flat&logo=stackoverflow"
-              alt="StackOverflow"
-            />
-          </Link>
-          <Link href="https://x.com/p-co-st" target="_blank" className="me-1">
-            <img
-              src="https://shields.io/badge/Twitter-Let's Go-x.svg?style=flat&logo=x"
-              alt="X Or Twitter"
-            />
-          </Link>
-          <Link
-            href="mailto:pouriyastk1@gmail.com"
-            target="_blank"
-            className="me-1"
-          >
-            <img
-              src="https://shields.io/badge/Gmail-Let's Go-gmail.svg?style=flat&logo=gmail"
-              alt="Gmail"
-            />
-          </Link>
-          <Link
-            href="https://wa.me/+989389372901"
-            target="_blank"
-            className="me-1"
-          >
-            <img
-              src="https://shields.io/badge/Whatsapp-Let's Go-whatsapp.svg?style=flat&logo=whatsapp"
-              alt="Whatsapp"
-            />
-          </Link>
-          <Link href="https://t.me/P_CO_ST" target="_blank">
-            <img
-              src="https://shields.io/badge/Telegram-Let's Go-telegram.svg?style=flat&logo=telegram"
-              alt="telegram"
-            />
-          </Link>
+          <div className="d-flex flex-wrap gap-1">
+            {logos.map((item) => (
+              <ShieldsIO key={item.alt} {...item} />
+            ))}
+          </div>
         </div>
       </CustomCol>
     </Row>

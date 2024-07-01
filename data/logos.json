@@ -1,0 +1,37 @@
+[
+  {
+    "link": "https://linkedin.com/in/pouriya-sedaghat",
+    "src": "https://shields.io/badge/LinkedIn-Let's Go-linkedin.svg?style=flat&logo=linkedin",
+    "alt": "LinkedIn"
+  },
+  {
+    "link": "https://github.com/pouriya-sedaghat",
+    "src": "https://shields.io/badge/Github-Let's Go-github.svg?style=flat&logo=github",
+    "alt": "Github"
+  },
+  {
+    "link": "https://stackoverflow.com/users/21948275/pouriya-sedaghat",
+    "src": "https://shields.io/badge/StackOverflow-Let's Go-stackoverflow.svg?style=flat&logo=stackoverflow",
+    "alt": "StackOverflow"
+  },
+  {
+    "link": "https://x.com/p-co-st",
+    "src": "https://shields.io/badge/X (Twitter)-Let's Go-x.svg?style=flat&logo=x",
+    "alt": "X Or Twitter"
+  },
+  {
+    "link": "mailto:pouriyastk1@gmail.com",
+    "src": "https://shields.io/badge/Gmail-Let's Go-gmail.svg?style=flat&logo=gmail",
+    "alt": "Gmail"
+  },
+  {
+    "link": "https://wa.me/+989389372901",
+    "src": "https://shields.io/badge/Whatsapp-Let's Go-whatsapp.svg?style=flat&logo=whatsapp",
+    "alt": "Whatsapp"
+  },
+  {
+    "link": "https://t.me/P_CO_ST",
+    "src": "https://shields.io/badge/Telegram-Let's Go-telegram.svg?style=flat&logo=telegram",
+    "alt": "Telegram"
+  }
+]

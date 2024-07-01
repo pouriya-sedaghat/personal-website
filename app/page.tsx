@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 
+import { basePath } from "@/next.config.mjs";
+
 import { Row } from "react-bootstrap";
 
 import Image from "next/image";
 import Link from "next/link";
 
 import CustomCol from "@/components/CustomCol";
+import ShieldsIO from "@/components/ShieldsIO";
 
-import { basePath } from "@/next.config.mjs";
+import logos from "@/data/logos.json";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -46,48 +49,12 @@ export default function Home() {
           </div>
           <div className="mt-lg-0 mt-3">
             <h2 className="h5">Follow Me</h2>
-            <Link
-              href="https://linkedin.com/in/pouriya-sedaghat"
-              target="_blank"
-              className="me-1"
-            >
-              <img
-                src="https://shields.io/badge/LinkedIn-Let's Go-linkedin.svg?style=flat&logo=linkedin"
-                alt="LinkedIn"
-              />
-            </Link>
-            <Link
-              href="https://github.com/pouriya-sedaghat"
-              target="_blank"
-              className="me-1"
-            >
-              <img
-                src="https://shields.io/badge/Github-Let's Go-github.svg?style=flat&logo=github"
-                alt="Github"
-              />
-            </Link>
-            <Link
-              href="https://stackoverflow.com/users/21948275/pouriya-sedaghat"
-              target="_blank"
-              className="me-1"
-            >
-              <img
-                src="https://shields.io/badge/StackOverflow-Let's Go-stackoverflow.svg?style=flat&logo=stackoverflow"
-                alt="StackOverflow"
-              />
-            </Link>
-            <Link href="https://x.com/p-co-st" target="_blank" className="me-1">
-              <img
-                src="https://shields.io/badge/Twitter-Let's Go-x.svg?style=flat&logo=x"
-                alt="X Or Twitter"
-              />
-            </Link>
-            <Link href="mailto:pouriyastk1@gmail.com" target="_blank">
-              <img
-                src="https://shields.io/badge/Gmail-Let's Go-gmail.svg?style=flat&logo=gmail"
-                alt="Gmail"
-              />
-            </Link>
+            <div className="d-flex flex-wrap gap-1">
+              {logos.map(
+                (item, index) =>
+                  index < 5 && <ShieldsIO key={item.alt} {...item} />
+              )}
+            </div>
           </div>
         </div>
       </CustomCol>
