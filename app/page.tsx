@@ -13,7 +13,7 @@ import ShieldsIO from "@/components/ShieldsIO";
 import logos from "@/data/logos.json";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Home", 
 };
 
 export default function Home() {
